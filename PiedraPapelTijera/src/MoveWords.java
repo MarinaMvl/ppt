@@ -67,7 +67,23 @@ public class MoveWords{
 
 	    if (first_i == second_i) return EMPATE;
 	    
-	    return (( (first_i +1) % validMoves.length ) == second_i ) ? GANA: PIERDE;
+	    if (first_i==0 && second_i==1) return GANA;
+	    if (first_i==1 && second_i==2) return GANA;
+	    if (first_i==2 && second_i==3) return GANA;
+	    if (first_i==3 && second_i==4) return GANA;
+	    if (first_i==4 && second_i==0) return GANA;
+	    if (first_i==0 && second_i==3) return GANA;
+	    if (first_i==3 && second_i==1) return GANA;
+	    if (first_i==1 && second_i==4) return GANA;
+	    if (first_i==4 && second_i==2) return GANA;
+	    if (first_i==2 && second_i==0) return GANA;
+	    
+	    
+	    else 
+	    {
+	    	return PIERDE;
+	    }
+	    }
 	}
 	
 } 
